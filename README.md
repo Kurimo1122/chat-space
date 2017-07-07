@@ -12,6 +12,17 @@
 - has_many :groups
 - has_many :messages
 
+## membersテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
+
+### Association
+- belongs_to :group
+- belongs_to :user
+
 ## groups table
 |Column|Type|Options|
 |------|----|-------|
@@ -26,7 +37,7 @@
 |------|----|-------|
 | body | text | null: false |
 | image | string | null: false |
-| user_id | integer | null:false, foreign_key: true |
+| user_id | integer | null: false, foreign_key: true |
 | group_id | integer | null: false, foreign_key: true |
 
 ### Association
