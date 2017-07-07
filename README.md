@@ -13,8 +13,8 @@
 - has_many :messages
 
 ## groups table
-| Column | Type | Options|
-| ------------- |---||-------------|
+|Column|Type|Options|
+|------|----|-------|
 | name  | string | null: false |
 | user_id | integer | null: false, foreign_key: true|
 
@@ -22,8 +22,8 @@
 - has_many :users
 
 ## messages table
-| Column     | Type              | | Options |
-| ------------- | ------------- | ------------- |
+|Column|Type|Options|
+|------|----|-------|
 | body | text | null: false |
 | image | string | null: false |
 | user_id | integer | null:false, foreign_key: true |
