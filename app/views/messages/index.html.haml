@@ -1,0 +1,34 @@
+.chat
+  .chat__side.col-md-3
+    .chat__side__user
+      %h5 test_name
+
+      .chat__side__user__icon
+        = link_to '' do
+          %i.fa.fa-pencil-square-o
+        = link_to '' do
+          %i.fa.fa-cog
+
+    .chat__side__group
+      %ul
+        %li
+          = link_to '', class: 'chat__side__group__link' do
+            %p.chat__side__group__link__name グループ名
+            %p.chat__side__group__link__message メッセージ
+
+  .chat__main.col-md-9
+    .chat__main__group-info
+      %h4 グループ名
+      %p Members: メンバー
+
+    .chat__main__messages
+      %ul.chat-messages
+        %li.chat-message
+          .chat-message__header
+            %h4.chat-message__user-name User Name
+            %p.chat-message__time Time
+          .chat-messages__body
+            %p Message Body
+
+    .chat__main__send
+      
