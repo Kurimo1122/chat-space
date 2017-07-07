@@ -1,7 +1,7 @@
 # DB設計
 
 ## users table
-|Column| ¥Type|Options|
+|Column|Type|Options|
 |-------------|-------------|
 |name|string|null: false|
 |email|string|null: false|
